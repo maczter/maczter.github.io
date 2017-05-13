@@ -3,11 +3,47 @@ body {
 	text-align: center;
 	font-family: helvetica;
 }
+p {
+	font-size: 14px;
+}
+h1 {
+	font-size: 70px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 32px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 23px;
+	font-weight: bold;
+}
+.navlinks {
+	font-size: 18px;
+}
 #decorativeheader {
-	background-image: url("../images/the-flatiron-building.png")
-	list-style: none;
+	background-image: url("../images/the-flatiron-building.png");
+	background-size: cover;
 	color: white;
 }
 #decorativeheader a {
+	color: white;
+}
+#decorativesubheader {
+	background-image: url("../images/the-flatiron-building.png");
+	background-size: cover;
+	color: white;
+}
+#decorativesubheader a {
+	color: white;
+}
+#decorativefooter {
+	background-color: dimgray;
+	background-size: cover;
+	color: white;
+	text-align: left;
+	font-size: 11px;
+}
+#decorativefooter a {
 	color: white;
 }
