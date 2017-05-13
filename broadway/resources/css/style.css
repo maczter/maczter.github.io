@@ -5,6 +5,9 @@ body {
 }
 header {
 	background-image: url("../images/the-flatiron-building.png")
-	color: white;
 	list-style: none;
+	color: white;
+}
+header a {
+	color: white;
 }
