@@ -3,11 +3,11 @@ body {
 	text-align: center;
 	font-family: helvetica;
 }
-header {
+#decorativeheader {
 	background-image: url("../images/the-flatiron-building.png")
 	list-style: none;
 	color: white;
 }
-header a {
+#decorativeheader a {
 	color: white;
 }
