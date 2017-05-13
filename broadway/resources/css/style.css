@@ -1,4 +1,10 @@
 /* CSS Document */
 body {
 	text-align: center;
+	font-family: helvetica;
+}
+header {
+	background-image: url("../images/the-flatiron-building.png")
+	color: white;
+	list-style: none;
 }
