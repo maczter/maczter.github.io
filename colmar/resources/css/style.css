@@ -234,7 +234,8 @@ header .mobile li {
 	margin: 1rem 1.5rem 1rem 1rem;
 }
 .student-link-text {
-	margin: 2.25rem 1.5rem auto 0;
+	align-content: center;
+	margin: auto 1.5rem auto 0;
 }
 
 @media only screen and (max-width: 760px) {
