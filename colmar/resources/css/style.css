@@ -302,6 +302,7 @@ header .mobile {
 	}
 	
 	.student-link {
+		border: none;
 		width: auto;
 		max-width: 100%;
 		display: block;
@@ -327,6 +328,7 @@ header .mobile {
 	}
 	.student-link:last-of-type {
 	margin-bottom: 2rem;
+	background-color: transparent;
 } 
 }
 video {
