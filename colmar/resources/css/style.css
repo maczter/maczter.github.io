@@ -5,12 +5,9 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-size: 16px;
+  line-height: 1.6;
   color: #3C3C3C;
   max-width: 100%;
-}
-
-body {
-	line-height: 1.6;
 }
 
 h1 {
@@ -337,38 +334,46 @@ header .mobile {
 
 
 .course-listings {
-	display: inline-flex;
+	display: flex;
 	flex-wrap: wrap;
-	margin: 0;
-	padding: 2rem;
 	background-color: #cccccc;
-	align-items: stretch;
 }
 
 .section-title {
 	display: block;
 	width: 100%;
 	text-align: center;
-	margin: 0rem 0 1rem 0; 
+	margin: 2rem 0 1rem 0;
+	background-color: aqua;
+}
+
+.course-categories {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 0 auto 2rem auto;
+	background-color: hotpink;
+	justify-content: center;
 }
 
 .course-category {
 	display: block;
-	margin: 1rem 1rem;
-	max-width: 30%;
-	min-width: 15.625rem;
+	margin: 1rem 1rem 0 1rem;
+	width: 30%;
 	background-color: white;
+	min-width: 15.625rem;
 }
 
 .course-category img {
-	max-width: 100%;
-	margin: 0;
+	width: 100%;
 }
 
 .course-category-text {
 	display: block;
 	margin: 0 1rem;
+	max-width: 100%;
 	padding-bottom: 1.5rem;
+	background-color: orange;
 }
 
 .course-category-text h3 {
@@ -376,7 +381,11 @@ header .mobile {
 }
 
 .course-category-text p {
+	white-space: normal;
 	margin-top: .5rem;
+}
+
+@media only screen and (max-width: 760px) {
 }
 
 video {
