@@ -5,6 +5,11 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-size: 16px;
+  color: #3C3C3C;
+}
+
+body {
+	line-height: 1.6;
 }
 
 h1 {
@@ -20,9 +25,28 @@ h2 {
 }
 
 h3 {
-	font-size: 1.125rem;
+	font-size: 1.25rem;
 	font-weight: bold;
 	line-height: 1.6;
+}
+
+h4, p {
+	font-size: 1rem;
+	line-height: normal;
+}
+
+h5 {
+	font-size: .9rem;
+	line-height: normal;
+}
+
+h6 {
+	font-size: .8rem;
+	line-height: normal;
+}
+
+a {
+	color: dodgerblue;
 }
 
 .main-content {
@@ -48,7 +72,7 @@ h3 {
 
 .image-container img {
   display: block;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 /* Header */
@@ -98,7 +122,7 @@ nav a {
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
-  color: #4a4a4a;
+  color: #3c3c3c;
 }
 
 header .mobile {
@@ -168,10 +192,6 @@ header .mobile {
   margin-right: 1.5rem;
 }
 
-#sign-up-cta .content {
-  color: #3C3C3C;
-}
-
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: .5rem;
@@ -212,6 +232,53 @@ header .mobile {
 }
 	
 }
+
+/* Student Section */
+
+.student-content {
+	display: flex;
+	margin-top: 4rem;
+	background-color: green;
+}
+
+.student-feature {
+	margin: 2rem 1rem 2rem 1.5rem;
+	background-color: red;
+}
+
+.student-feature img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 0 2rem 0rem;
+  }
+
+.student-links {
+	margin: 1rem 0 1rem .5rem;
+	background-color: purple;
+}
+
+.student-link {
+	width: 423px;
+	display: flex;
+	background-color: orange;
+}
+
+.student-link:last-of-type {
+	background-color: #cccccc;
+} 
+
+.student-link img {
+	width: 35%;
+	height: 35%;
+	margin: 1rem 1.5rem 1rem 1rem;
+	background-color: brown;
+}
+
+.student-link-text {
+	margin: 2.25rem 1.5rem auto 0;
+	background-color: fuchsia;
+}
+
 
 video {
 	width: 75%;
