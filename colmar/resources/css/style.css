@@ -238,12 +238,11 @@ header .mobile {
 .student-content {
 	display: flex;
 	margin-top: 4rem;
-	background-color: green;
 }
 
 .student-feature {
+	display: block;
 	margin: 2rem 1rem 2rem 1.5rem;
-	background-color: red;
 }
 
 .student-feature img {
@@ -253,33 +252,83 @@ header .mobile {
   }
 
 .student-links {
-	margin: 1rem 0 1rem .5rem;
-	background-color: purple;
+	margin: 0rem 0 1rem .5rem;
+	border-left: 1px solid #cccccc;
 }
 
 .student-link {
 	width: 423px;
 	display: flex;
-	background-color: orange;
+	border-bottom: 1px solid #cccccc;
 }
+
+.student-link:first-of-type {
+	margin-top: 1rem;
+} 
 
 .student-link:last-of-type {
 	background-color: #cccccc;
 } 
 
+.student-link .mobile {
+		display: none;
+	}
+
+.student-link .desktop {
+		display: flex;
+	}
+
 .student-link img {
 	width: 35%;
 	height: 35%;
 	margin: 1rem 1.5rem 1rem 1rem;
-	background-color: brown;
 }
 
 .student-link-text {
 	margin: 2.25rem 1.5rem auto 0;
-	background-color: fuchsia;
 }
 
-
+@media only screen and (max-width: 760px) {
+	.student-feature {
+		display: none;
+	}
+	
+	.student-link .desktop {
+		display: none;
+	}
+	
+	.student-link .mobile {
+		display: flex;
+	}
+	
+	.student-link {
+		width: auto;
+		max-width: 100%;
+		display: block;
+		margin: 0;
+		padding: 1rem 1rem 0 1rem;
+	}
+	
+	.student-link img {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	
+	.student-links {
+		margin: 0;
+		display: block;
+		width: 100%;
+	}
+	
+	.student-link-text {
+		margin: 1.5rem 1rem 0 1rem;
+		max-width: 100%;
+	}
+	.student-link:last-of-type {
+	margin-bottom: 2rem;
+} 
+}
 video {
 	width: 75%;
 }
