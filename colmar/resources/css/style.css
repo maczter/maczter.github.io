@@ -1,0 +1,218 @@
+/* CSS Document */
+
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+h3 {
+	font-size: 1.125rem;
+	font-weight: bold;
+	line-height: 1.6;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+  background-color: #cccccc;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #3C3C3C;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 50%;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+header .logo {
+  	flex: 1;
+	height: 3rem;
+}
+
+header .logo-icon {
+	height: 3rem;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-weight: bold;
+	margin-left: 1.5rem;
+	font-size: 1.125rem;
+}
+
+header nav ul {
+	display: flex;
+	align-content: flex-end;
+	margin-right: 1.5rem;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .mobile {
+  display: none;
+}
+
+#logo-colmar {
+	color: #212121;
+}
+
+#logo-academy {
+	color: #666666
+}
+
+@media only screen and (max-width : 760px ){
+  header .desktop {
+    display: none;
+  }
+
+  header .desktop-logo {
+    display: none;
+  }	
+	
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
+
+
+/* Sign Up Section */
+
+
+
+#sign-up-section {
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.main-content .banner .image {
+	max-width: 60%;
+	height: auto;
+	margin: 2rem 0 2rem 1.5rem;
+  }
+
+#sign-up-cta {
+  align-content: center;
+  min-width: 13em;
+  max-width: 17rem;
+  margin-left: 3.25rem;
+  margin-right: 1.5rem;
+}
+
+#sign-up-cta .content {
+  color: #3C3C3C;
+}
+
+#sign-up-cta .button {
+  margin-top: 1.625rem;
+  padding: .5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+  #sign-up-section {
+	height: auto;
+    align-items: flex-end;
+    justify-content: center;
+	background-color: #666666;
+  }
+
+  #sign-up-cta {
+    position: static;
+	max-width: 100%;
+    width: 100%;
+    background-color: #cccccc;
+    border: none;
+	margin: 0;
+	margin-top: 11.25rem;
+	padding: 2rem 1rem;
+  }
+
+  #sign-up-cta .content {
+    margin-bottom: 0;
+  }
+
+  .main-content .banner .image {
+    display: none;
+  }
+	
+  .start .button {
+  border-radius: 6px;
+  background-color: #666666;
+  color: white;
+}
+	
+}
+
+video {
+	width: 75%;
+}
