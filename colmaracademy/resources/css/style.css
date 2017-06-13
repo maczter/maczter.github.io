@@ -37,12 +37,12 @@ h6 {
 	line-height: normal;
 }
 a {
-	color: deepskyblue;
+	color: dodgerblue;
 }
 .main-content {
 	position: relative;
 	top: 4rem; /* To offset for fixed header. */
-	background-color: deepskyblue;
+	background-color: skyblue;
 	width: 100%;
 }
 .center {
@@ -174,7 +174,7 @@ header .mobile li {
 	position: static;
 	max-width: 100%;
 	width: 100%;
-	background-color: deepskyblue;
+	background-color: skyblue;
 	border: none;
 	margin: 0;
 	margin-top: 0;
@@ -222,7 +222,7 @@ header .mobile li {
 	margin-top: 1rem;
 }
 .student-link:last-of-type {
-	background-color: deepskyblue;
+	background-color: skyblue;
 }
 .student-link .mobile {
 	display: none;
@@ -291,7 +291,7 @@ header .mobile li {
 .course-listings {
 	display: flex;
 	flex-wrap: wrap;
-	background-color: deepskyblue;
+	background-color: skyblue;
 }
 .course-listings a {
 	color: #3c3c3c;
@@ -413,7 +413,7 @@ header .mobile li {
 	align-items: center;
 }
 .thesis-paper:first-of-type {
-	background-color: deepskyblue;
+	background-color: skyblue;
 }
 .thesis-paper-text {
 	display: block;
