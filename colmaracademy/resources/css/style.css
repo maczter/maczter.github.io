@@ -244,7 +244,7 @@ header .mobile li {
 .student-content {
 	width: 100%;
 	margin-bottom: 2rem;
-	}
+}
 .student-feature {
 	display: none;
 }
@@ -418,24 +418,25 @@ header .mobile li {
 .thesis-paper-text {
 	display: block;
 }
+
 @media only screen and (max-width: 760px) {
-	.thesis-papers {
-		display: none;
-	}
-	.thesis-content {
-		margin: 0 0 2rem 0;
-		padding: 0;
-	}
-	.thesis-content .section-title {
+.thesis-papers {
+	display: none;
+}
+.thesis-content {
+	margin: 0 0 2rem 0;
+	padding: 0;
+}
+.thesis-content .section-title {
 	margin: 0 auto 1rem auto;
 	padding: 0;
-	}
-	.thesis-feature h3, .thesis-feature p{
+}
+.thesis-feature h3, .thesis-feature p {
 	display: none;
-	}
-	.thesis-content {
-		margin-bottom: 0;
-	}
+}
+.thesis-content {
+	margin-bottom: 0;
+}
 }
 /* Footer section */
 footer {
@@ -456,10 +457,10 @@ footer a {
 }
 
 @media only screen and (max-width: 760px) {
-	footer {
-		padding: 1rem;
-	}
-	.footer-links {
-		display: none;
-	}
+footer {
+	padding: 1rem;
+}
+.footer-links {
+	display: none;
+}
 }
