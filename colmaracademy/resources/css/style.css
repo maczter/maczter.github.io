@@ -1,0 +1,465 @@
+/* CSS Document */
+
+/* Universal Styles */
+
+html {
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-size: 16px;
+	line-height: 1.6;
+	color: #3C3C3C;
+	max-width: 100%;
+}
+h1 {
+	font-size: 2.75rem;
+	font-weight: bold;
+	line-height: 1.2;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.4;
+}
+h3 {
+	font-size: 1.375rem;
+	font-weight: bold;
+	line-height: 1.4;
+}
+h4, p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+h5 {
+	font-size: .9rem;
+	line-height: normal;
+}
+h6 {
+	font-size: .8rem;
+	line-height: normal;
+}
+a {
+	color: deepskyblue;
+}
+.main-content {
+	position: relative;
+	top: 4rem; /* To offset for fixed header. */
+	background-color: deepskyblue;
+	width: 100%;
+}
+.center {
+	text-align: center;
+}
+.button {
+	border-radius: 4px;
+	background-color: #212121;
+	color: white;
+}
+.image-container {
+	overflow: hidden;
+}
+.image-container img {
+	display: block;
+	max-width: 100%;
+}
+/* Header */
+
+header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	background-color: white;
+}
+header .content {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+}
+header .logo {
+	flex: 1;
+	height: 3rem;
+}
+header .logo-icon {
+	height: 3rem;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font-weight: bold;
+	margin-left: 1.5rem;
+	font-size: 1.125rem;
+}
+header nav ul {
+	display: flex;
+	align-content: flex-end;
+	margin-right: 1.5rem;
+}
+nav li {
+	padding-left: 1rem;
+}
+nav a {
+	vertical-align: bottom;
+	line-height: 1.6;
+	font-size: 1rem;
+	color: #3c3c3c;
+}
+header .mobile {
+	display: none;
+}
+#logo-colmar {
+	color: #212121;
+}
+#logo-academy {
+	color: #666666
+}
+
+@media only screen and (max-width : 760px ) {
+header .desktop {
+	display: none;
+}
+header .desktop-logo {
+	display: none;
+}
+header .mobile {
+	display: block;
+	width: 100%;
+}
+header .content {
+	padding: 0;
+}
+header .mobile ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+header .mobile li {
+	padding: 0;
+}
+}
+/* Sign Up Section */
+
+
+
+#sign-up-section {
+	display: flex;
+	align-content: flex-start;
+	align-items: center;
+}
+.main-content .banner .image {
+	max-width: 60%;
+	height: auto;
+	margin: 2rem 0 2rem 1.5rem;
+}
+#sign-up-cta {
+	align-content: center;
+	min-width: 13em;
+	max-width: 19em;
+	margin-left: 3.25rem;
+	margin-right: 1.5rem;
+}
+#sign-up-cta .button {
+	margin-top: 1.625rem;
+	padding: .5rem;
+	text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+#sign-up-section {
+	height: auto;
+	align-items: flex-end;
+	justify-content: center;
+	background-color: #666666;
+}
+#sign-up-cta {
+	position: static;
+	max-width: 100%;
+	width: 100%;
+	background-color: deepskyblue;
+	border: none;
+	margin: 0;
+	margin-top: 0;
+	padding: 2rem 1rem;
+}
+#sign-up-cta .content {
+	margin-bottom: 0;
+}
+.main-content .banner .image {
+	display: none;
+}
+.start .button {
+	border-radius: 6px;
+	background-color: #212121;
+	color: white;
+}
+}
+/* Student Section */
+
+.student-content {
+	display: flex;
+	margin-top: 4rem;
+	width: 100%;
+}
+.student-feature {
+	display: block;
+	margin: 2rem 1rem 2rem 1.5rem;
+}
+.student-feature img {
+	width: 100%;
+	height: auto;
+	margin: 0 0 2rem 0rem;
+}
+.student-links {
+	max-width: 100%;
+	margin: 0;
+	border-left: 1px solid #cccccc;
+}
+.student-link {
+	display: flex;
+	width: 423px;
+	border-bottom: 1px solid #cccccc;
+}
+.student-link:first-of-type {
+	margin-top: 1rem;
+}
+.student-link:last-of-type {
+	background-color: deepskyblue;
+}
+.student-link .mobile {
+	display: none;
+}
+.student-link .desktop {
+	display: flex;
+}
+.student-link img {
+	width: 35%;
+	height: 35%;
+	margin: 1rem 1.5rem 1rem 1rem;
+}
+.student-link-text {
+	align-content: center;
+	margin: auto 1.5rem auto 0;
+}
+
+@media only screen and (max-width: 760px) {
+.student-content {
+	width: 100%;
+	margin-bottom: 2rem;
+	}
+.student-feature {
+	display: none;
+}
+.student-links {
+	margin: 0;
+	display: block;
+	width: 100%;
+	padding: 0 1rem;
+	border-bottom: 1px #cccccc solid;
+}
+.student-link .desktop {
+	display: none;
+}
+.student-link .mobile {
+	display: block;
+	width: 100%;
+}
+.student-link {
+	display: block;
+	border: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 0 1rem 0;
+}
+.student-link img {
+	width: inherit;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.student-link-text {
+	margin: 1.5rem 1rem 0 1rem;
+	max-width: 100%;
+}
+.student-link:last-of-type {
+	margin-bottom: 2rem;
+	background-color: white;
+	padding-bottom: 0;
+}
+}
+/* Course Categories Section */
+
+
+.course-listings {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: deepskyblue;
+}
+.course-listings a {
+	color: #3c3c3c;
+}
+.section-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 2rem 0 1rem 0;
+}
+.course-categories {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 0 auto 2rem auto;
+	justify-content: center;
+}
+.course-category {
+	display: block;
+	margin: 1rem 1rem 0 1rem;
+	width: 30%;
+	background-color: white;
+	min-width: 15.625rem;
+}
+.course-category img {
+	width: 100%;
+}
+.course-category-text {
+	display: block;
+	margin: 0 1rem;
+	max-width: 100%;
+	padding-bottom: 1.5rem;
+}
+.course-category-text h3 {
+	margin-top: .5rem;
+}
+.course-category-text p {
+	white-space: normal;
+	margin-top: .5rem;
+}
+
+@media only screen and (max-width: 760px) {
+.course-listings {
+	background-color: white;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.course-listings .section-title {
+	margin: 0 0 1rem 0;
+	max-width: 100%;
+}
+.course-listings img {
+	display: none;
+}
+.course-categories {
+	display: block;
+	width: 100%;
+	padding: 0 1rem 1.5rem 1rem;
+	margin-bottom: 0;
+	border-bottom: 1px #cccccc solid;
+}
+.course-category {
+	width: 100%;
+	margin: 0 auto .5rem auto;
+	background-color: #212121;
+	border-radius: 6px;
+}
+.course-category-text {
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+.course-category-text h3 {
+	margin: 0;
+	padding: 1rem;
+	color: white;
+	font-weight: normal;
+}
+.course-category-text .desktop {
+	display: none;
+}
+}
+/* Thesis Section */
+.thesis-section {
+	border-bottom: 1px #cccccc solid;
+}
+.thesis-content {
+	display: flex;
+	max-width: 100%;
+	margin: 2rem 0rem 2rem 1.5rem;
+	background-color: white;
+}
+.thesis-content .section-title {
+	margin: 2rem auto;
+	width: 100%;
+}
+.thesis-feature {
+	max-width: auto;
+}
+.thesis-feature video {
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+.thesis-papers {
+	display: block;
+	margin-left: 1rem;
+}
+.thesis-paper img {
+	display: block;
+	max-height: 132px;
+	max-width: 132px;
+	margin: 1rem;
+}
+.thesis-paper {
+	height: 168px;
+	min-width: 423px;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+}
+.thesis-paper:first-of-type {
+	background-color: deepskyblue;
+}
+.thesis-paper-text {
+	display: block;
+}
+@media only screen and (max-width: 760px) {
+	.thesis-papers {
+		display: none;
+	}
+	.thesis-content {
+		margin: 0 0 2rem 0;
+		padding: 0;
+	}
+	.thesis-content .section-title {
+	margin: 0 auto 1rem auto;
+	padding: 0;
+	}
+	.thesis-feature h3, .thesis-feature p{
+	display: none;
+	}
+	.thesis-content {
+		margin-bottom: 0;
+	}
+}
+/* Footer section */
+footer {
+	display: flex;
+	padding: 1.5rem;
+}
+footer .copyright {
+	flex-grow: 1;
+}
+footer ul {
+	display: flex;
+}
+footer li {
+	margin-left: .5rem;
+}
+footer a {
+	color: #3c3c3c;
+}
+
+@media only screen and (max-width: 760px) {
+	footer {
+		padding: 1rem;
+	}
+	.footer-links {
+		display: none;
+	}
+}
