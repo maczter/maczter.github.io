@@ -212,7 +212,7 @@ header .mobile li {
 	border-left: 1px solid #cccccc;
 }
 .student-link {
-	width: 423px;
+	min-width: 423px;
 	display: flex;
 	border-bottom: 1px solid #cccccc;
 }
